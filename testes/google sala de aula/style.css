@@ -1,0 +1,39 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao{
+    width: 250px;
+    height: 40px;
+    display: flex;
+    border-radius: 0px 30px 30px 0px;
+    align-items: center;
+    margin: 5px 0px;
+    padding: 3px 0px;
+
+}
+
+.img_turma{
+    background-color: rgb(238, 135, 0);
+    height: 35px;
+    width: 35px;
+    margin: 0px 20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.botao:hover{
+    background-color: rgb(236, 236, 236);
+}
+
+.nome_turma{
+    font-weight: bold;
+    font-size: 16px;
+    background-color: rgb(50, 189, 85);
+}
