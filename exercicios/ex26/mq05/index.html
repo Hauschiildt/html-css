@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Testando meu site</h1>
+        <i class="material-symbols-outlined" id="menu" onclick="clickMenu()" >menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="">Opção 1</a></li>
+                <li><a href="">Opção 2</a></li>
+                <li><a href="">Opção 3</a></li>
+                <li><a href="">Opção 4</a></li>
+                <li><a href="">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>
+                Testando media queries
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum asperiores modi enim nulla. Veritatis vitae tempora animi quo amet magnam magni ea vel eligendi? Cumque vero molestiae earum commodi minus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate adipisci dolore fugiat optio. Asperiores dolorum amet magnam recusandae illum sapiente, maiores saepe, voluptas laboriosam corrupti officia voluptate velit sunt dolorem!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sequi fugiat, voluptatum sapiente rem itaque animi necessitatibus, tempore quibusdam eos aliquam neque blanditiis perferendis ipsum qui doloribus corporis dolor adipisci!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta asperiores, vitae in dignissimos tenetur eveniet numquam quaerat est error nulla. Veritatis ipsum deleniti commodi fugiat quaerat sint nostrum perferendis quidem!Lorem
+            </p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 769) {
+                itens.style.display = 'block';
+            } else {
+                itens.style.display = 'none';
+            }
+        }
+
+        function clickMenu() {
+            if(itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else { itens.style.display = 'block'
+
+            }
+        }
+    </script>
+</body>
+</html>
